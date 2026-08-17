@@ -117,7 +117,7 @@ class Developer:
 <h2 align="center">🌐 Connect With Me</h2>
 
 <div align="center">
-  <a href="https://linkedin.com/in/gaurangiigarg-">
+  <a href="https://linkedin.com/in/gaurangi-garg-">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" />
   </a>
   <a href="mailto:gaurangigg12@gmail.com">
