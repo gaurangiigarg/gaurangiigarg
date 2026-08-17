@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=92EEFF&text=Gaurangi%20Garg&fontSize=55&fontAlign=50&fontAlignY=45&desc=Data%20Science%20Student&descSize=30&descAlign=50&descAlignY=65" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=92EEFF&text=Gaurangi%20Garg&fontSize=55&fontAlign=50&fontAlignY=45&desc=Computer%20Science%20Student&descSize=30&descAlign=50&descAlignY=65" />
 </div>
 
 <div align="center">
@@ -134,5 +134,5 @@ class Developer:
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=92EEFF&text=Thank%20You%20for%20Visiting!&fontSize=20&fontColor=ffffff&fontAlignY=75" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=92EEFF&text=Thanks%20for%20Visiting!&fontSize=20&fontColor=ffffff&fontAlignY=75" />
 </div>
