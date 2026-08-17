@@ -20,21 +20,20 @@
 class Developer:
     def __init__(self):
         self.name = "Gaurangi Garg"
-        self.role = "Data Science Student"
+        self.role = "Computer Science Student"
 
-    def whats_cooking(self):
+    def about(self):
         return {
-            "learning": ["DSA", "AI/ML", "Full Stack"],
-            "building": "Impactful community projects",
+            "skills": ["DSA", "AI/ML", "Full Stack"],
+            "building": "Projects that solve real problems",
             "exploring": "Data Science & Problem Solving",
-            "passion": "Turning ideas into real solutions"
+            "learning": "Learning while building"
         }
 
     def lifestyle(self):
         return [
             "🌙 Night Owl Coding",
-            "🎧 Deep Focus Music",
-            "💻 Tech Explorer"
+            "🎧 Deep Focus Music"
         ]
 ```
 
