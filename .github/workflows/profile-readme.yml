@@ -1,32 +1,21 @@
-name: Update Profile Snake
+name: Update Profile Pencil
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   
-  workflow_dispatch:          
+    - cron: "0 */12 * * *"   # runs twice a day
+  workflow_dispatch:          # lets you trigger it manually from the Actions tab
   push:
     branches:
       - main
 
 jobs:
-  snake:
+  pencil:
     permissions:
       contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Generate snake animation
-        uses: Platane/snk@v3
-        with:
-          github_user_name: gaurangiigarg
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Fix dist/ permissions (snake action writes as root)
-        run: sudo chown -R $USER:$USER dist
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,9 +27,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_LOGIN: gaurangiigarg
           OUT_PATH: dist/pencil-contribution.svg
-        run: python scripts/generate_pencil_svg.py
+        run: |
+          mkdir -p dist
+          python scripts/generate_pencil_svg.py
 
-      - name: Push SVGs to "output" branch
+      - name: Push SVG to "output" branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
